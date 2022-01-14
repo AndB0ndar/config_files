@@ -1,0 +1,313 @@
+
+# TERM Environmental Variable
+XTerm.termName: xterm-256color
+
+# COLORS
+# https://web.archive.org/web/20090130061234/http://phraktured.net/terminal-colors/
+!-------- Theme: Two {{{
+! !------------------------------------------------------
+! !Theme Two
+!XTerm.vt100.background: rgb:00/00/00
+!XTerm.vt100.foreground: rgb:7f/7f/7f
+!XTerm.vt100.color0:     rgb:00/00/00
+!XTerm.vt100.color1:     rgb:9e/18/28
+!XTerm.vt100.color2:     rgb:96/8a/38
+!XTerm.vt100.color3:     rgb:ae/ce/92
+!XTerm.vt100.color4:     rgb:41/41/71
+!XTerm.vt100.color5:     rgb:96/3c/59
+!XTerm.vt100.color6:     rgb:41/81/79
+!XTerm.vt100.color7:     rgb:be/be/be
+!XTerm.vt100.color8:     rgb:66/66/66
+!XTerm.vt100.color9:     rgb:cf/61/71
+!XTerm.vt100.color10:    rgb:ff/f7/96
+!XTerm.vt100.color11:	rgb:c5/f7/79
+!XTerm.vt100.color12:    rgb:41/86/be
+!XTerm.vt100.color13:    rgb:cf/9e/be
+!XTerm.vt100.color14:    rgb:71/be/be
+!XTerm.vt100.color15:    rgb:ff/ff/ff
+!
+! !-------- Theme: Four {{{
+! !------------------------------------------------------
+! !Theme Four
+! *background: rgb:00/00/00
+! *foreground: rgb:ff/ff/ff
+! *color0:     rgb:00/00/00
+! *color1:     rgb:d3/62/65
+! *color2:     rgb:ae/ce/91
+! *color3:     rgb:e7/e1/8c
+! *color4:     rgb:7a/7a/b0
+! *color5:     rgb:96/3c/59
+! *color6:     rgb:41/81/79
+! *color7:     rgb:be/be/be
+! *color8:     rgb:66/66/66
+! *color9:     rgb:ef/81/71
+! *color10:    rgb:e5/f7/79
+! *color11:    rgb:ff/f7/96
+! *color12:    rgb:41/86/be
+! *color13:    rgb:ef/9e/be
+! *color14:    rgb:71/be/be
+! *color15:    rgb:ff/ff/ff
+!
+!
+! ! }}}
+! !-------- Theme: Five {{{
+! !------------------------------------------------------
+! !Theme Five
+! *background: rgb:ad/aa/ad
+! *foreground: rgb:00/00/00
+! *color0:     rgb:00/00/00
+! *color1:     rgb:64/0f/19
+! *color2:     rgb:63/79/6b
+! *color3:     rgb:ad/71/42
+! *color4:     rgb:4f/4f/89
+! *color5:     rgb:b2/5c/7c
+! *color6:     rgb:52/75/6b
+! *color7:     rgb:ad/aa/ad
+! *color8:     rgb:52/55/52
+! *color9:     rgb:a5/61/63
+! *color10:    rgb:ce/c2/63
+! *color11:    rgb:73/ae/70
+! *color12:    rgb:36/70/9f
+! *color13:    rgb:aa/82/9c
+! *color14:    rgb:51/89/89
+! *color15:    rgb:ff/ff/ef
+! ! }}}
+!
+! !-------- Theme: Eight {{{
+! !------------------------------------------------------
+! !Theme Eight
+! *background: rgb:10/10/10
+! *foreground: rgb:d3/d3/d3
+! *color0:     rgb:10/10/10
+! *color1:     rgb:cd/5c/5c
+! *color2:     rgb:2e/8b/57
+! *color3:     rgb:f0/e6/8c
+! *color4:     rgb:b0/c4/de
+! *color5:     rgb:ba/55/d3
+! *color6:     rgb:46/82/b4 *color7:     rgb:d3/d3/d3
+! *color8:     rgb:4d/4d/4d
+! *color9:     rgb:ff/6a/6a
+! *color10:    rgb:8f/bc/8f
+! *color11:    rgb:ff/fa/cd
+! *color12:    rgb:1e/90/ff
+! *color13:    rgb:db/70/93
+! *color14:    rgb:5f/9e/a0
+! *color15:    rgb:ff/ff/ff
+!
+!
+! ! }}}
+! !-------- Theme: Thirteen {{{
+! !------------------------------------------------------
+! !Theme Thirteen
+! *background: rgb:00/00/00
+! *foreground: rgb:aa/aa/aa
+! *color0:     rgb:00/00/00
+! *color1:     rgb:9e/18/28
+! *color2:     rgb:ae/ce/92
+! *color3:     rgb:96/8a/38
+! *color4:     rgb:41/41/71
+! *color5:     rgb:96/3c/59
+! *color6:     rgb:7f/9f/7f
+! *color7:     rgb:be/be/be
+! *color8:     rgb:66/66/66
+! *color9:     rgb:cf/61/71
+! *color10:    rgb:af/c5/af
+! *color11:    rgb:f0/df/af
+! *color12:    rgb:8e/9f/bc
+! *color13:    rgb:dc/a3/a3
+! *color14:    rgb:95/c1/c5
+! *color15:    rgb:ff/ff/ff
+!
+!
+! ! }}}
+! !-------- Theme: Fifteen {{{
+! !------------------------------------------------------
+! !Theme Fifteen
+! *background: rgb:1d/2b/3a
+! *foreground: rgb:be/be/be
+! *color0:     rgb:00/00/00
+! *color1:     rgb:d3/62/65
+! *color2:     rgb:ae/ce/91
+! *color3:     rgb:e7/e1/8c
+! *color4:     rgb:7a/7a/b0
+! *color5:     rgb:96/3c/59
+! *color6:     rgb:41/81/79
+! *color7:     rgb:be/be/be
+! *color8:     rgb:66/66/66
+! *color9:     rgb:ef/81/71
+! *color10:    rgb:e5/f7/79
+! *color11:    rgb:ff/f7/99
+! *color12:    rgb:41/86/be
+! *color13:    rgb:ef/9e/be
+! *color14:    rgb:71/be/be
+! *color15:    rgb:ff/ff/ff
+!
+!
+! ! }}}
+! !-------- Theme: Sixteen {{{
+! !------------------------------------------------------
+! !Theme Sixteen
+! *background: rgb:00/00/00
+! *foreground: rgb:be/be/be
+! *color0:     rgb:00/00/00
+! *color1:     rgb:9e/18/28
+! *color2:     rgb:ae/ce/92
+! *color3:     rgb:96/8a/38
+! *color4:     rgb:41/41/71
+! *color5:     rgb:96/3c/59
+! *color6:     rgb:41/81/79
+! *color7:     rgb:be/be/be
+! *color8:     rgb:66/66/66
+! *color9:     rgb:cf/61/71
+! *color10:    rgb:c5/f7/79
+! *color11:    rgb:ff/f7/96
+! *color12:    rgb:41/86/be
+! *color13:    rgb:cf/9e/be
+! *color14:    rgb:71/be/be
+! *color15:    rgb:ff/ff/ff
+!
+!
+! ! }}}
+! !-------- Theme: Twenty-One {{{
+! !------------------------------------------------------
+! !Theme Twenty-One
+XTerm.vt100.background: rgb:1a/1a/1a
+XTerm.vt100.foreground: rgb:aa/aa/aa
+XTerm.vt100.color0:     rgb:00/00/00
+XTerm.vt100.color8:     rgb:66/66/66
+XTerm.vt100.color1:     rgb:9e/18/28
+XTerm.vt100.color9:     rgb:bc/57/66
+XTerm.vt100.color2:     rgb:00/88/00
+XTerm.vt100.color10:    rgb:61/a1/71
+XTerm.vt100.color3:     rgb:d2/bb/4b
+XTerm.vt100.color11:    rgb:e7/db/52
+XTerm.vt100.color4:     rgb:41/41/71
+XTerm.vt100.color12:    rgb:50/85/af
+XTerm.vt100.color5:     rgb:96/3c/59
+XTerm.vt100.color13:    rgb:a9/7a/99
+XTerm.vt100.color6:     rgb:41/81/79
+XTerm.vt100.color14:    rgb:6b/a4/a4
+XTerm.vt100.color7:     rgb:be/be/be
+XTerm.vt100.color15:    rgb:ff/ff/ff
+!
+!
+! ! }}}
+! !-------- Theme: Twenty-Two {{{
+! !------------------------------------------------------
+! !Theme Twenty-Two
+!XTerm.vt100.background: rgb:00/00/00
+!XTerm.vt100.foreground: rgb:be/be/b
+!XTerm.vt100.color0:     rgb:00/00/00
+!XTerm.vt100.*color1:     rgb:d3/62/65
+!XTerm.vt100.*color2:     rgb:ae/ce/91
+!XTerm.vt100.*color3:     rgb:e7/e1/8c
+!XTerm.vt100.*color4:     rgb:7a/7a/b0
+!XTerm.vt100.*color5:     rgb:96/3c/59
+!XTerm.vt100.color6:     rgb:7f/9f/7f
+!XTerm.vt100.color7:     rgb:be/be/be
+!XTerm.vt100.color8:     rgb:66/66/66
+!XTerm.vt100.color9:     rgb:ef/81/71
+!XTerm.vt100.color10:    rgb:e5/f7/79
+!XTerm.vt100.color11:    rgb:f0/df/af
+!XTerm.vt100.color12:    rgb:8e/9f/bc
+!XTerm.vt100.color13:    rgb:ef/9e/be
+!XTerm.vt100.color14:    rgb:71/be/be
+!XTerm.vt100.color15:    rgb:ff/ff/ff
+!
+!
+! ! }}}
+! !-------- Theme: Tango {{{
+! !------------------------------------------------------
+! !tango color scheme
+! ! source: https://github.com/lenage/dotfiles/blob/master/.Xresources
+! xterm*color0: #1e1e1e
+! xterm*color1: #cc0000
+! xterm*color2: #4e9a06
+! xterm*color3: #c4a000
+! xterm*color4: #3465a4
+! xterm*color5: #75507b
+! xterm*color6: #0b939b
+! xterm*color7: #d3d7cf
+! xterm*color8: #555753
+! xterm*color9: #ef2929
+! xterm*color10: #8ae234
+! xterm*color11: #fce94f
+! xterm*color12: #729fcf
+! xterm*color13: #ad7fa8
+! xterm*color14: #00f5e9
+! xterm*color15: #eeeeec
+!
+!
+! ! }}}
+!! !-------- Theme: rezza {{{
+!! !------------------------------------------------------
+!*foreground:     rgb:dd/dd/dd
+!*background:     rgb:22/22/22
+!!black
+!*color0:         rgb:19/19/19
+!*color8:         rgb:25/25/25
+!!red
+!*color1:         rgb:80/32/32
+!*color9:         rgb:98/2b/2b
+!!green
+!*color2:         rgb:5b/76/2f
+!*color10:        rgb:89/b8/3f
+!!brown/yellow
+!*color3:         rgb:aa/99/43
+!*color11:        rgb:ef/ef/60
+!!blue
+!*color4:         rgb:32/4c/80
+!*color12:        rgb:2b/4f/98
+!!magenta
+!*color5:         rgb:70/6c/9a
+!*color13:        rgb:82/6a/b1
+!!cyan
+!*color6:         rgb:92/b1/9e
+!*color14:        rgb:a1/cd/cd
+!!white
+!*color7:         rgb:ff/ff/ff
+!*color15:        rgb:dd/dd/dd
+
+! Fonts ====================================================
+! set font and fontsize
+XTerm*faceName: DejaVu Sans Mono
+XTerm*faceSize: 16
+
+! VT Font Menu: Unreadable
+xterm*faceSize1: 8
+! VT font menu: Tiny
+xterm*faceSize2: 10
+! VT font menu: Medium
+xterm*faceSize3: 12
+! VT font menu: Large
+xterm*faceSize4: 16
+! VT font menu: Huge
+xterm*faceSize5: 22
+
+
+# use utf8
+xterm*utf8: 2
+
+# Make 'Alt' key behave as on other terminal emulators
+# XTerm.vt100.metaSendsEscape: true
+
+# Scrolling ===============================================
+XTerm.vt100.saveLines: 4096
+
+# MENU ====================================================
+XTerm.vt100.geometry: 80x32
+
+# KEY =====================================================
+# copy and insert with CLIPBOARD
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+! enable copy/paste hotkey to work (shift+insert = paste ; mouse highlight = copy)
+XTerm*selectToClipboard: true
+
+! Cursor ====================================================
+! pointer and cursor (blinking and color)
+XTerm*pointerColor: white
+XTerm*pointerColorBackground: black
+XTerm*cursorColor: white
+XTerm*cursorBlink: true
