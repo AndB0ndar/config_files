@@ -41,6 +41,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 # decrease screen brightness
 
+# ScreenShot
+bindsym --release Print exec gnome-screenshot
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -185,6 +188,9 @@ bindsym $mod+r mode "resize"
 #exec_always "setxkbmap -layout us,ru"
 #exec_always "setxkbmap -option 'grp:win_space_toggle'" #shift_toggle
 exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:shift_toggle
+
+assign [class="^TelegramDesktop"] 3
+assign [class="^Yandex-browser-beta"] 2
 
 # The floating modifier
 floating_modifier Mod1

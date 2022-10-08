@@ -1,17 +1,19 @@
-"set runtimepath^=~/.vim runtimepath+=~/.vim/after
-"let &packpath = &runtimepath
-"source ~/.vimrc
 call plug#begin('~/.config/nvim/plugged')
+
 " --- Оформление ---
-"Plug 'vim-airline/vim-airline'        " Крутая строка состояния внизу экрана
-"Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'        " Крутая строка состояния внизу экрана
+Plug 'vim-airline/vim-airline-themes'
 "Plug 'joshdick/onedark.vim'          " Тема для вима
 "Plug 'challenger-deep-theme/vim'      " Тема вима
 "Plug 'Yggdroot/indentLine'            " Точки для табов
 
 Plug 'majutsushi/tagbar'              " Показывает дерево классов и функций, можно очень быстро перемещаться кнопка F8
+
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-"Plug 'preservim/nerdtree'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'ryanoasis/vim-devicons'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Plug 'jiangmiao/auto-pairs'
@@ -21,10 +23,20 @@ Plug 'flazz/vim-colorschemes'        " Может менять цветовую 
 " --- Разное ---
 "Plug 'cohama/lexima.vim'              " Закрывает автоматом скобки
 "Plug 'powerman/vim-plugin-ruscmd'     " Русская раскладка в командом режиме
+
+" --- Snippy ---
+Plug 'dcampos/nvim-snippy'
+Plug 'honza/vim-snippets'
+
+" --- jsonnet ---
+Plug 'google/vim-jsonnet'
+" --- Dhall ---
+Plug 'vmchale/dhall-vim'
 call plug#end()
 
 syntax on
 colorscheme Atelier_DuneLight
+"colorscheme gruvbox
 "colorscheme Atelier_DuneDark
 "colorscheme molokai
 "colorscheme Monokai
@@ -62,6 +74,41 @@ set imsearch=0  " Чтобы при старте поиск был на англ
 " Автоматический перенос текста для текстовых файлов
 autocmd BufRead,BufNewFile *.txt  setlocal textwidth=80
 
+set colorcolumn=79
+
+"=============================
+"stagbar
+"=============================
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
+
+" Автостарт плагина для некоторых типов файлов
+"autocmd VimEnter *.cpp,*.h,*.py,*.pl,*.js,*.php "TagbarToggle
+" Компактный вид у тагбара
+let g:tagbar_compact = 1
+" Отк. сортировка по имени у тагбара (мне хронология важнее)
+let g:tagbar_sort = 0
+"=============================
+"vim-airline-themes
+"=============================
+"let g:airline_theme='badwolf'
+let g:airline_theme='selenized'
+"let g:airline_theme='ubaryd'
+
+"=============================
+" --- Snippy ---
+"=============================
+imap <expr> <Tab> snippy#can_expand_or_advance() ? '<Plug>(snippy-expand-or-advance)' : '<Tab>'
+imap <expr> <S-Tab> snippy#can_jump(-1) ? '<Plug>(snippy-previous)' : '<S-Tab>'
+smap <expr> <Tab> snippy#can_jump(1) ? '<Plug>(snippy-next)' : '<Tab>'
+smap <expr> <S-Tab> snippy#can_jump(-1) ? '<Plug>(snippy-previous)' : '<S-Tab>'
+xmap <Tab> <Plug>(snippy-cut-text)
+
+inoremap jk <esc>
+
+" turn off search highlight
+nnoremap ,<space> :nohlsearch<CR>
+
 " Отключаем стрелочки
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
@@ -69,6 +116,7 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
 let g:mapleader=','
+
 "map <Leader> <Plug>(easymotion-prefix)
 map  <Leader>f <Plug>(easymotion-bd-f)
 nmap <Leader>f <Plug>(easymotion-overwin-f)
@@ -79,14 +127,15 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
-inoremap jk <esc>
 
 " Перечитать .vimrc / init
 noremap <F3> :source ~/.config/nvim/init.vim<CR>
 
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 nnoremap <leader>n :NERDTreeFocus<CR>
 "nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 "nnoremap <C-f> :NERDTreeFind<CR>
 "for plug tagbar
-nmap <F8> :TagbarToggle<CR> 
+nmap <Leader>t :TagbarToggle<CR> 
